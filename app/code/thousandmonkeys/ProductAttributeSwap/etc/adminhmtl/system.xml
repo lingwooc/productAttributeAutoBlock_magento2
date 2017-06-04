@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+* Copyright © 2015 PlazaThemes.com. All rights reserved.
+
+* @author PlazaThemes Team <contact@plazathemes.com>
+*/
+-->
+<config 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <tab id="thousandmonkeys" translate="label" sortOrder="100">
+            <label>Thousandmonkeys</label>
+        </tab>
+        <section id="productAttributeSwap" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Product Attribute Swap</label>
+            <tab>thousandmonkeys</tab>
+            <resource>Thousandmonkeys_ProductAttributeSwap::config</resource>
+            <group id="attribute" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Attribute</label>
+                <field id="attributeid" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Attribute ID</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
