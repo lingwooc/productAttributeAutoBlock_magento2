@@ -12,10 +12,10 @@
         <tab id="thousandmonkeys" translate="label" sortOrder="100">
             <label>Thousandmonkeys</label>
         </tab>
-        <section id="productAttributeSwap" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
-            <label>Product Attribute Swap</label>
+        <section id="ProductAttributeAutoBlock" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Product Attribute Auto Block</label>
             <tab>thousandmonkeys</tab>
-            <resource>Thousandmonkeys_ProductAttributeSwap::config</resource>
+            <resource>Thousandmonkeys_ProductAttributeAutoBlock::config</resource>
             <group id="attribute" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Attribute</label>
                 <field id="attributeid" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">

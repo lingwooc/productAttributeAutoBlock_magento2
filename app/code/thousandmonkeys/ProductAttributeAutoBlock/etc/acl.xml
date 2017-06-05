@@ -11,7 +11,7 @@
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="Thousandmonkeys_ProductAttributeSwap::config" title="Extension config example" sortOrder="50" />
+                            <resource id="Thousandmonkeys_ProductAttributeAutoBlock::config" title="Extension config example" sortOrder="50" />
                         </resource>
                     </resource>
                 </resource>
