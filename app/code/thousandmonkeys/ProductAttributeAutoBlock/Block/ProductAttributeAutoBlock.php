@@ -5,7 +5,7 @@ namespace thousandmonkeys\ProductAttributeAutoBlock\Block;
 use Magento\Catalog\Block\Product\Context;
 use Magento\Framework\Stdlib\ArrayUtils;
 
-class ProductAttributeAutoBlock extends \Magento\Catalog\Block\Product\View\abstractView {
+class ProductAttributeAutoBlock extends \Magento\Catalog\Block\Product\View\AbstractView {
 
 	protected $_template = 'attributeBlock.phtml';
 	protected $_scopeConfig;
