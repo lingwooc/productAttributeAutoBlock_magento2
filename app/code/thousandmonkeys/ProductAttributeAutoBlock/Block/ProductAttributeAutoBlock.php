@@ -41,10 +41,10 @@ class ProductAttributeAutoBlock extends \Magento\Catalog\Block\Product\View\Abst
 
 		$blockCodes = array();
 
-		foreach (trim(explode(',',$attIDs)) as $attID){
-			$values = $product->getResource()->getAttribute($attID)->getFrontend()->getValue($product); 
+		foreach (explode(',',$attIDs) as $attID){
+			$values = $product->getResource()->getAttribute(trim($attID))->getFrontend()->getValue($product); 
 			foreach (explode(',',$values) as $value)
-				$blockCodes[] = $attID.'_'.trim($value);
+				$blockCodes[] = strtolower($attID.'_'.trim($value));
 		}
 		return $blockCodes;
 	}
