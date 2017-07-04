@@ -36,15 +36,16 @@ class ProductAttributeAutoBlock extends \Magento\Catalog\Block\Product\View\Abst
 	}
 
 	public function getBlockIDs(){
-		$attID = $this->getAttributeID();
+		$attIDs = $this->getAttributeID();
 		$product = $this->getProduct();
 
 		$blockCodes = array();
 
-		$values = $product->getResource()->getAttribute($attID)->getFrontend()->getValue($product); 
-		foreach (explode(',',$values) as $value)
-		    $blockCodes[] = $attID.'_'.trim($value);
-
+		foreach (trim(explode(',',$attIDs)) as $attID){
+			$values = $product->getResource()->getAttribute($attID)->getFrontend()->getValue($product); 
+			foreach (explode(',',$values) as $value)
+				$blockCodes[] = $attID.'_'.trim($value);
+		}
 		return $blockCodes;
 	}
 }
