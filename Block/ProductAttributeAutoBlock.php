@@ -1,6 +1,6 @@
 <?php
 
-namespace thousandmonkeys\ProductAttributeAutoBlock\Block;
+namespace ThousandMonkeys\ProductAttributeAutoBlock\Block;
 
 use Magento\Catalog\Block\Product\Context;
 use Magento\Framework\Stdlib\ArrayUtils;

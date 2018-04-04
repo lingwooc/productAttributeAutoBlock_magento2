@@ -9,7 +9,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
 	<body>
 		<referenceContainer name="content">
-			<block class="thousandmonkeys\ProductAttributeAutoBlock\Block\ProductAttributeAutoBlock" name="product.attribute.block" before="product.info.main"></block>
+			<block class="ThousandMonkeys\ProductAttributeAutoBlock\Block\ProductAttributeAutoBlock" name="product.attribute.block" before="product.info.main"></block>
 		</referenceContainer>
 		<move element="product.attribute.block" destination="product.info.main" after="product.info.overview"/>
 	</body>

@@ -2,6 +2,6 @@
  
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'thousandmonkeys_ProductAttributeAutoBlock',
+    'ThousandMonkeys_ProductAttributeAutoBlock',
     __DIR__
 );
